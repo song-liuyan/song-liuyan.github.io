@@ -80,20 +80,20 @@
 
 
 <meta name="description" content="在Xcode8.0/iOS10以访问权限(相册,相机,麦克风等权限)时需要注意在工程的info.plist文件加上对应的Key-Value
-可以根据自己需要选择添加 (建议都添加都加上也行,影响 app store 审核)12345678910111213141516&amp;lt;key&amp;gt;NSCalendarsUsageDescription&amp;lt;/key&amp;gt;&amp;lt;string&amp;gt;为了">
+可以根据自己需要选择添加 (建议都添加都加上,否则影响 app store 审核)12345678910111213141516&amp;lt;key&amp;gt;NSCalendarsUsageDescription&amp;lt;/key&amp;gt;&amp;lt;string&amp;gt;为了">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS开发笔记--iOS10隐私权限的申请">
 <meta property="og:url" content="http://yoursite.com/2017/05/25/iOS开发笔记--iOS10隐私权限的申请/index.html">
 <meta property="og:site_name" content="一颗糖栗子的博客">
 <meta property="og:description" content="在Xcode8.0/iOS10以访问权限(相册,相机,麦克风等权限)时需要注意在工程的info.plist文件加上对应的Key-Value
-可以根据自己需要选择添加 (建议都添加都加上也行,影响 app store 审核)12345678910111213141516&amp;lt;key&amp;gt;NSCalendarsUsageDescription&amp;lt;/key&amp;gt;&amp;lt;string&amp;gt;为了">
+可以根据自己需要选择添加 (建议都添加都加上,否则影响 app store 审核)12345678910111213141516&amp;lt;key&amp;gt;NSCalendarsUsageDescription&amp;lt;/key&amp;gt;&amp;lt;string&amp;gt;为了">
 <meta property="og:image" content="http://yoursite.com/images/15036417971219/14955312898135.jpg">
 <meta property="og:image" content="http://yoursite.com/images/15036417971219/14956798646655.jpg">
-<meta property="og:updated_time" content="2019-03-21T06:11:32.835Z">
+<meta property="og:updated_time" content="2020-06-03T07:13:53.256Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS开发笔记--iOS10隐私权限的申请">
 <meta name="twitter:description" content="在Xcode8.0/iOS10以访问权限(相册,相机,麦克风等权限)时需要注意在工程的info.plist文件加上对应的Key-Value
-可以根据自己需要选择添加 (建议都添加都加上也行,影响 app store 审核)12345678910111213141516&amp;lt;key&amp;gt;NSCalendarsUsageDescription&amp;lt;/key&amp;gt;&amp;lt;string&amp;gt;为了">
+可以根据自己需要选择添加 (建议都添加都加上,否则影响 app store 审核)12345678910111213141516&amp;lt;key&amp;gt;NSCalendarsUsageDescription&amp;lt;/key&amp;gt;&amp;lt;string&amp;gt;为了">
 <meta name="twitter:image" content="http://yoursite.com/images/15036417971219/14955312898135.jpg">
 
 
@@ -305,7 +305,7 @@
 
       
         <h4 id="在Xcode8-0-iOS10以访问权限-相册-相机-麦克风等权限-时需要注意在工程的info-plist文件加上对应的Key-Value"><a href="#在Xcode8-0-iOS10以访问权限-相册-相机-麦克风等权限-时需要注意在工程的info-plist文件加上对应的Key-Value" class="headerlink" title="在Xcode8.0/iOS10以访问权限(相册,相机,麦克风等权限)时需要注意在工程的info.plist文件加上对应的Key-Value"></a>在Xcode8.0/iOS10以访问权限(相册,相机,麦克风等权限)时需要注意在工程的info.plist文件加上对应的Key-Value</h4><p><img src="/images/15036417971219/14955312898135.jpg" alt="14955312898135"></p>
-<p><em>可以根据自己需要选择添加 (建议都添加都加上也行,影响 app store 审核)</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;key&gt;NSCalendarsUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问日历&lt;/string&gt;</div><div class="line">&lt;key&gt;NSCameraUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问您的相机&lt;/string&gt;</div><div class="line">&lt;key&gt;NSContactsUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问您的联系人&lt;/string&gt;</div><div class="line">&lt;key&gt;NSLocationAlwaysUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许app后台获取位置&lt;/string&gt;</div><div class="line">&lt;key&gt;NSLocationWhenInUseUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许使用时获取位置&lt;/string&gt;</div><div class="line">&lt;key&gt;NSMicrophoneUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问您的麦克风&lt;/string&gt;</div><div class="line">&lt;key&gt;NSPhotoLibraryUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问您的相册&lt;/string&gt;</div><div class="line">&lt;key&gt;NSRemindersUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问备忘录&lt;/string&gt;</div></pre></td></tr></table></figure></p>
+<p><em>可以根据自己需要选择添加 (建议都添加都加上,否则影响 app store 审核)</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;key&gt;NSCalendarsUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问日历&lt;/string&gt;</div><div class="line">&lt;key&gt;NSCameraUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问您的相机&lt;/string&gt;</div><div class="line">&lt;key&gt;NSContactsUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问您的联系人&lt;/string&gt;</div><div class="line">&lt;key&gt;NSLocationAlwaysUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许app后台获取位置&lt;/string&gt;</div><div class="line">&lt;key&gt;NSLocationWhenInUseUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许使用时获取位置&lt;/string&gt;</div><div class="line">&lt;key&gt;NSMicrophoneUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问您的麦克风&lt;/string&gt;</div><div class="line">&lt;key&gt;NSPhotoLibraryUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问您的相册&lt;/string&gt;</div><div class="line">&lt;key&gt;NSRemindersUsageDescription&lt;/key&gt;</div><div class="line">&lt;string&gt;为了更好的体验,请允许访问备忘录&lt;/string&gt;</div></pre></td></tr></table></figure></p>
 <p><a href="https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html" target="_blank" rel="external">Xcode属性列表对应的名称</a></p>
 <p>下面是我针对申请权限做的封装 有需要的可以下载看看:<a href="https://github.com/song-liuyan/ToolPackage" target="_blank" rel="external">隐私权限申请</a>(方便使用)</p>
 <p>重点说明:导入工程后会报错误,需要加入<br><strong>Contacts.framework,<br>AssetsLibrary.framework,<br>EventKit.framework,<br>Photos.framework</strong><br>这四个framework</p>
